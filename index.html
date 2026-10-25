@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Feyzi Emir SADUNOĞLU — Uçak Bakım Öğrencisi (Gövde-Motor) & Havacılık Teknisyeni Adayı. Kişisel portfolyo sitesi." />
+  <title>Feyzi Emir SADUNOĞLU — Portfolyo</title>
+
+  <!--
+    Poppins: Latin + Latin-Extended desteği ile Türkçe karakter uyumlu (ğ, ş, ı, ö, ü, ç).
+    Subset olarak "latin,latin-ext" belirtilmiştir.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap&subset=latin,latin-ext"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVİGASYON
+  ═══════════════════════════════════════════ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-brand" id="navBrand">FES</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="#about"    class="nav-item" id="navAbout">Hakkımda</a></li>
+        <li><a href="#skills"   class="nav-item" id="navSkills">Yetenekler</a></li>
+        <li><a href="#projects" class="nav-item" id="navProjects">Projeler</a></li>
+        <li><a href="#contact"  class="nav-item" id="navContact">İletişim</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════
+         HERO / HAKKIMDA
+    ═══════════════════════════════════════════ -->
+    <section class="section hero-section" id="hero">
+      <div class="hero-bg-shape" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <!-- Sol: Metin -->
+        <div class="hero-text" id="about">
+          <span class="hero-eyebrow" id="heroEyebrow">
+            <span class="eyebrow-dot"></span>
+            Portfolyo
+          </span>
+
+          <h1 class="hero-name" id="heroName">
+            Feyzi Emir<br />
+            <span class="name-last">SADUNOĞLU</span>
+          </h1>
+
+          <p class="hero-title" id="heroTitle">
+            Uçak Bakım Öğrencisi <span class="title-sep">·</span> Gövde-Motor<br />
+            Havacılık Teknisyeni Adayı
+          </p>
+
+          <p class="hero-bio" id="heroBio">
+            11. sınıf Gövde-Motor Uçak Bakım öğrencisiyim. Havacılık teknolojileri,
+            uçak mekaniği ve aerodinamik alanlarına ilgi duyuyor, geleceğin uçak
+            bakım teknisyeni olmak için kendimi geliştiriyorum. Kendimi dijital
+            dünyada da geliştirmek adına web tasarımı dünyasına adım attım.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btnProjects">Projeleri Gör</a>
+            <a href="#contact"  class="btn btn-outline" id="btnContact">İletişime Geç</a>
+          </div>
+        </div>
+
+        <!-- Sağ: Avatar / Amblem -->
+        <div class="hero-visual" id="heroVisual" aria-hidden="true">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <svg class="avatar-icon" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <!-- Basit uçak silüeti -->
+                <path d="M40 14 L52 38 L72 34 L70 40 L52 42 L46 58 L40 58 L42 42 L10 46 L8 40 L28 36 Z"
+                      fill="currentColor" opacity="0.92"/>
+                <!-- Kanat detayı -->
+                <circle cx="40" cy="40" r="6" fill="white" opacity="0.25"/>
+              </svg>
+            </div>
+          </div>
+
+          <!-- Süsleyici rozetler -->
+          <div class="hero-badge badge-top" id="badgeTop">
+            <span class="badge-icon">✈</span>
+            <span>Gövde-Motor</span>
+          </div>
+          <div class="hero-badge badge-bottom" id="badgeBottom">
+            <span class="badge-icon">💻</span>
+            <span>Web Tasarım</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aşağı ok -->
+      <a href="#skills" class="scroll-down" id="scrollDown" aria-label="Aşağı kaydır">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         YETENEKLER
+    ═══════════════════════════════════════════ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Yetenekler</span>
+          <h2 class="section-title">Uzmanlık Alanlarım</h2>
+          <p class="section-sub">Teknik ve dijital yetkinliklerim</p>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card reveal" id="skillAircraft">
+            <div class="skill-icon-wrap">
+              <!-- Uçak sistemi ikonası -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 8L30 22 44 19 43 24 30 26 27 36H21L23 26 6 28 5 23 18 20Z" fill="currentColor"/>
+                <circle cx="24" cy="24" r="3.5" fill="white" opacity="0.6"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Uçak Sistemleri</h3>
+            <p class="skill-desc">Gövde, motor ve mekanik bileşenler hakkında teknik bilgi</p>
+          </div>
+
+          <div class="skill-card reveal" id="skillDraft">
+            <div class="skill-icon-wrap">
+              <!-- Teknik resim ikonası -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="8" width="32" height="32" rx="3" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                <line x1="14" y1="22" x2="34" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="14" y1="28" x2="28" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M14 16 L20 16 M24 16 L34 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="14" y1="34" x2="22" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Teknik Resim</h3>
+            <p class="skill-desc">Teknik çizim ve şema okuma yetkinliği</p>
+          </div>
+
+          <div class="skill-card reveal" id="skillWeb">
+            <div class="skill-icon-wrap">
+              <!-- HTML/CSS ikonası -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 8L12 40L24 43L36 40L40 8H8Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M32 16H16L17 24H31L30 32L24 34L18 32L17.5 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Web Tasarımı</h3>
+            <p class="skill-desc">HTML & CSS ile modern arayüz geliştirme</p>
+          </div>
+
+          <div class="skill-card reveal" id="skillTools">
+            <div class="skill-icon-wrap">
+              <!-- El aletleri ikonası -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 36L30 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M28 10C28 10 38 12 38 20C38 24 34 26 30 24L14 38C12 40 9 40 8 38C6 36 7 33 9 31L24 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Temel El Aletleri</h3>
+            <p class="skill-desc">El aletleri ve bakım ekipmanları kullanımı</p>
+          </div>
+
+          <div class="skill-card reveal" id="skillOffice">
+            <div class="skill-icon-wrap">
+              <!-- MS Office ikonası -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="8" y="10" width="22" height="28" rx="2" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <line x1="13" y1="18" x2="25" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="13" y1="23" x2="25" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="13" y1="28" x2="20" y2="28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M28 20H40V36C40 37.1 39.1 38 38 38H28V20Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <line x1="32" y1="26" x2="36" y2="26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <line x1="32" y1="30" x2="36" y2="30" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">MS Office</h3>
+            <p class="skill-desc">Word, Excel, PowerPoint ile etkin çalışma</p>
+          </div>
+
+          <div class="skill-card reveal" id="skillAI">
+            <div class="skill-icon-wrap">
+              <!-- AI ikonası -->
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                <circle cx="24" cy="24" r="4" fill="currentColor" opacity="0.7"/>
+                <path d="M24 12V8M24 40V36M12 24H8M40 24H36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M16 16L13 13M35 35L32 32M32 16L35 13M13 35L16 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="skill-name">Yapay Zeka Araçları</h3>
+            <p class="skill-desc">Modern YZ araçlarını verimli kullanma becerisi</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         PROJELER
+    ═══════════════════════════════════════════ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Projeler</span>
+          <h2 class="section-title">Çalışmalarım</h2>
+          <p class="section-sub">Akademik ve kişisel projelerden seçkiler</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Proje 1: IFTE -->
+          <article class="project-card reveal" id="projectIFTE">
+            <div class="project-stripe stripe-blue"></div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag ptag-blue">Havacılık</span>
+                <span class="ptag ptag-gray">Organizasyon</span>
+              </div>
+              <h3 class="project-title">IFTE Havacılık Fuarı Okul Temsilciliği</h3>
+              <p class="project-desc">
+                İstanbul Havacılık Eğitim Fuarı'nda (IFTE) okulumu ve bölümümü temsilen
+                stant görevlisi olarak yer aldım. Sektör profesyonelleri ve ziyaretçilerle
+                birebir iletişim kurarak tanıtım ve sunum süreçlerini yönettim.
+              </p>
+              <button class="btn-detail" id="btnIFTE" type="button">
+                Detayları Gör
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Proje 2: Budakdiş -->
+          <article class="project-card reveal" id="projectBudakdis">
+            <div class="project-stripe stripe-teal"></div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag ptag-teal">Web Tasarım</span>
+                <span class="ptag ptag-gray">Case Study</span>
+              </div>
+              <h3 class="project-title">Diş Kliniği Web Tasarım Projesi (Budakdiş)</h3>
+              <p class="project-desc">
+                Sağlık sektörü için sıfırdan geliştirilen, modern ve kullanıcı odaklı
+                örnek bir kurumsal web sitesi çalışması. Tasarım ve arayüz süreçleri
+                tamamen tamamlanmış, sunuma hazır bir portfolyo projesidir.
+              </p>
+              <a href="#" class="btn-detail" id="btnBudakdis">
+                Tasarımı İncele
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proje 3: TÜBİTAK Dil Bilimi -->
+          <article class="project-card reveal" id="projectTubitak1">
+            <div class="project-stripe stripe-purple"></div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag ptag-purple">Araştırma</span>
+                <span class="ptag ptag-gray">Ar-Ge</span>
+              </div>
+              <h3 class="project-title">TÜBİTAK 4006 Dil Bilimi Araştırma Projesi</h3>
+              <p class="project-desc">
+                İngilizce ve Almanca dilleri arasındaki yapısal ve kökensel benzerlikleri,
+                yazılışları ve anlamları ortak olan kelimeler üzerinden inceleyen,
+                TÜBİTAK 4006 Bilim Fuarı kapsamında sergilenen araştırma projesi.
+              </p>
+              <button class="btn-detail" id="btnTubitak1" type="button">
+                Detayları Gör
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </article>
+
+          <!-- Proje 4: Sürdürülebilir Çevre -->
+          <article class="project-card reveal" id="projectGreen">
+            <div class="project-stripe stripe-green"></div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="ptag ptag-green">İnovasyon</span>
+                <span class="ptag ptag-gray">Geri Dönüşüm</span>
+              </div>
+              <h3 class="project-title">Sürdürülebilir Çevre ve Malzeme Geliştirme Çalışması</h3>
+              <p class="project-desc">
+                Endüstriyel süreçlerde ponza taşlarının oluşturduğu atık miktarını
+                azaltmak amacıyla alternatif çevre dostu malzemelerin kullanımını
+                araştıran, laboratuvar ve test aşamalarından geçen yenilikçi bir
+                TÜBİTAK proje önerisi çalışması.
+              </p>
+              <button class="btn-detail" id="btnGreen" type="button">
+                Detayları Gör
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       İLETİŞİM / FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-content">
+
+        <div class="footer-intro">
+          <h2 class="footer-heading">İletişime Geçelim</h2>
+          <p class="footer-sub">
+            İş birliği, proje veya herhangi bir konu için benimle iletişime geçebilirsiniz.
+          </p>
+        </div>
+
+        <div class="contact-links">
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/feyzi-emir-saduno%C4%9Flu-740451426"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-btn contact-linkedin"
+            id="contactLinkedin"
+            aria-label="LinkedIn profilini ziyaret et"
+          >
+            <span class="contact-icon">
+              <!-- LinkedIn SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </span>
+            <span class="contact-label">LinkedIn</span>
+          </a>
+
+          <!-- E-posta -->
+          <a
+            href="mailto:mfesadunoglu.21.34@gmail.com"
+            class="contact-btn contact-email"
+            id="contactEmail"
+            aria-label="E-posta gönder"
+          >
+            <span class="contact-icon">
+              <!-- E-posta SVG -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </span>
+            <span class="contact-label">E-posta</span>
+          </a>
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © 2026 <strong>Feyzi Emir SADUNOĞLU</strong>. Tüm hakları saklıdır.
+        </p>
+        <p class="footer-made">
+          Tasarım &amp; Kodlama: Feyzi Emir SADUNOĞLU
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ──────────────────────────────────────────
+       Navbar scroll efekti
+    ────────────────────────────────────────── */
+    const header = document.getElementById('siteHeader');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    /* ──────────────────────────────────────────
+       Hamburger menü
+    ────────────────────────────────────────── */
+    const hamburger = document.getElementById('hamburger');
+    const navMenu   = document.getElementById('navMenu');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = hamburger.classList.toggle('open');
+      navMenu.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    navMenu.querySelectorAll('.nav-item').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        navMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    /* ──────────────────────────────────────────
+       Aktif nav linki (scroll spy)
+    ────────────────────────────────────────── */
+    const sections  = document.querySelectorAll('section[id], footer[id]');
+    const navItems  = document.querySelectorAll('.nav-item');
+
+    const spyObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        navItems.forEach(a => {
+          a.classList.toggle('active', a.getAttribute('href') === `#${entry.target.id}`);
+        });
+      });
+    }, { threshold: 0.35 });
+
+    sections.forEach(s => spyObserver.observe(s));
+
+    /* ──────────────────────────────────────────
+       Scroll reveal animasyonu
+    ────────────────────────────────────────── */
+    const revealEls = document.querySelectorAll('.reveal');
+
+    const revealObs = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (!entry.isIntersecting) return;
+        // Kardeş elemanlar arasındaki sıra indeksi
+        const siblings = [...(entry.target.parentElement?.children ?? [])];
+        const idx = siblings.indexOf(entry.target);
+        entry.target.style.transitionDelay = `${idx * 90}ms`;
+        entry.target.classList.add('visible');
+        revealObs.unobserve(entry.target);
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => revealObs.observe(el));
+  </script>
+</body>
+</html>
